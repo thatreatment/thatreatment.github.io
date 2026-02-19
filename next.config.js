@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // export the app as static HTML
+  output: 'export'
+}
 
 module.exports = nextConfig
