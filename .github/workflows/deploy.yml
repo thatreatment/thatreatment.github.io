@@ -24,11 +24,11 @@ jobs:
       - name: Build and export
         run: npm run export
 
-      - name: Commit generated docs
+      - name: Copy and commit static files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
-          # only commit if there are changes
-          git diff --quiet --staged || git commit -m "chore: update exported docs"
+          # move output into root and clean up (deploy script already does this)
+          git add .
+          git diff --quiet --staged || git commit -m "chore: update exported site"
           git push origin main
