@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && mkdir -p docs && cp -r out/* docs/",
+    "export": "next build && mkdir -p docs && cp -r out/* docs/ && cp CNAME docs/ 2>/dev/null || true",
     "deploy": "npm run export && git add docs && git commit -m \"deploy\" && git push origin main"
   },
   "dependencies": {
