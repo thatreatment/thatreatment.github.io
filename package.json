@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export -o docs",
+    "deploy": "npm run export && git add docs && git commit -m \"deploy\" && git push origin main"
   },
   "dependencies": {
     "react": "^18.2.0",
