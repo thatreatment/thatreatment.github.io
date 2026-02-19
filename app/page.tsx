@@ -20,11 +20,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent -z-10"></div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-gold bg-clip-text text-transparent">Digital Gold.</span>
+            <span className="gradient-gold bg-clip-text text-transparent">Digital Gold (edited).</span>
             <br />
             <span>Real Yield.</span>
             <br />
             <span className="text-gold">Institutional Arbitrage.</span>
+            {/* headline was updated for demonstration purposes */}
           </h1>
           
           <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
