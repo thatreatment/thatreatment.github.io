@@ -4,11 +4,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
     <main className="w-full overflow-hidden">
       <Navbar />
+      <Header />
       <Hero />
 
       {/* Features / Opportunity */}

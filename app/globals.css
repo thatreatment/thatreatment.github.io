@@ -23,6 +23,21 @@ body {
   background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
 }
 
+/* Ensure gradient text works across browsers */
+.gradient-gold.bg-clip-text,
+.bg-clip-text.gradient-gold {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Useful fallbacks in case Tailwind classnames aren't generated */
+.text-gold { color: #D4AF37; }
+.bg-gold { background-color: #D4AF37; }
+.text-dark-bg { color: #0F172A; }
+.bg-dark-bg { background-color: #0F172A; }
+
+
 .section-divider {
   border-top: 1px solid rgba(212, 175, 55, 0.15);
   padding-top: 4rem;
