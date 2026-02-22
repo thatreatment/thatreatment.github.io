@@ -18,6 +18,18 @@ export const metadata: Metadata = {
     "Institutional infrastructure for tokenized gold and precious mineral arbitrage.",
   keywords:
     "gold arbitrage, tokenized gold, institutional crypto infrastructure",
+  openGraph: {
+    title: "Goldun.com | Digital Gold Arbitrage Infrastructure",
+    description:
+      "Institutional infrastructure for tokenized gold and precious mineral arbitrage.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Goldun.com | Digital Gold Arbitrage Infrastructure",
+    description:
+      "Institutional infrastructure for tokenized gold and precious mineral arbitrage.",
+  },
 };
 
 export default function RootLayout({

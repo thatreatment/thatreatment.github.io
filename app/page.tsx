@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-16">
         <GoldTicker />
       </section>
       <Engine />
