@@ -18,6 +18,7 @@ Required:
 - `JWT_SECRET`
 - `INVESTOR_PASSWORD`
 - `DISCORD_WEBHOOK_URL`
+- `METALPRICEAPI_KEY`
 
 Optional CRM forwarding from contact form:
 
@@ -25,6 +26,13 @@ Optional CRM forwarding from contact form:
 - `HUBSPOT_KEY`
 - `SALESFORCE_ENDPOINT`
 - `SALESFORCE_TOKEN`
+
+## Live Precious Metals Ticker
+
+- UI component: `/components/GoldTicker.tsx`
+- API route: `/api/metals`
+- Upstream provider: MetalpriceAPI (`base=USD`, symbols `XAU,XAG,XPT,XPD`)
+- Refresh cadence: every 30 seconds
 
 ## Contact + CRM Flow
 
