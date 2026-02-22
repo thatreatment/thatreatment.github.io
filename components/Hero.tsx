@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen pt-32 pb-16 relative overflow-hidden bg-hero-aurora">
-      <div className="absolute inset-0 hero-grid opacity-20" />
+    <section className="min-h-screen pt-32 pb-16 relative overflow-hidden hero-backdrop">
+      <div className="absolute inset-0 bg-[#0B0F14]/65" />
+      <div className="absolute inset-0 hero-grid opacity-10" />
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -45,37 +45,6 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="glass-panel rounded-2xl p-8 border border-[#E6C46A]/15"
         >
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <div className="col-span-2 rounded-xl overflow-hidden border border-[#E6C46A]/20">
-              <Image
-                src="/file_0000000003e471fda26895c832f3115d.png"
-                alt="Goldun institutional header"
-                width={1536}
-                height={1024}
-                className="w-full h-40 object-cover"
-                priority
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden border border-[#E6C46A]/15">
-              <Image
-                src="/file_0000000003e471fda26895c832f3115d.png"
-                alt="Goldun market operations"
-                width={1536}
-                height={1024}
-                className="w-full h-24 object-cover"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden border border-[#E6C46A]/15">
-              <Image
-                src="/file_0000000003e471fda26895c832f3115d.png"
-                alt="Goldun reserve analytics"
-                width={1536}
-                height={1024}
-                className="w-full h-24 object-cover"
-              />
-            </div>
-          </div>
-
           <h2 className="text-xl font-semibold">Goldun Engine</h2>
           <p className="text-gray-400 mt-3">
             Systematic execution across spot, futures, and tokenized markets with

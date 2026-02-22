@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Capital() {
   return (
     <section id="capital" className="max-w-7xl mx-auto px-6 py-20 section-divider">
@@ -18,19 +16,6 @@ export default function Capital() {
             <li>• Monthly reserve attestations and audit reports</li>
             <li>• Flexible redemption windows aligned to liquidity tiers</li>
           </ul>
-          <div className="grid sm:grid-cols-2 gap-4 mt-8">
-            {["Custody Layer", "Allocation Desk"].map((label) => (
-              <div key={label} className="rounded-xl overflow-hidden border border-[#E6C46A]/15">
-                <Image
-                  src="/file_0000000003e471fda26895c832f3115d.png"
-                  alt={label}
-                  width={1536}
-                  height={1024}
-                  className="w-full h-28 object-cover"
-                />
-              </div>
-            ))}
-          </div>
         </div>
         <div className="glass-panel rounded-2xl p-6">
           <h3 className="text-lg font-semibold">Portfolio Metrics</h3>

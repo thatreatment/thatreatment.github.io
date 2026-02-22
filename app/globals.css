@@ -53,6 +53,14 @@ body {
   background-size: 22px 22px;
 }
 
+.hero-backdrop {
+  background-image:
+    linear-gradient(120deg, rgba(11, 15, 20, 0.92) 10%, rgba(11, 15, 20, 0.62) 45%, rgba(11, 15, 20, 0.9) 100%),
+    url('/file_00000000468c720c99ab35d965b5b24d.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .metallic-gradient {
   background: linear-gradient(135deg, rgba(230, 196, 106, 0.22), rgba(31, 41, 51, 0.75));
 }
